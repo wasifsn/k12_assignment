@@ -4,12 +4,11 @@ import useSearch from "../hooks/useData";
 import Modal from "./Modal";
 
 const Scroll = () => {
-  const [query, setQuery] = useState("");
   const [pageNum, setPageNum] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState({});
 
-  const { loading, error, users, hasMore } = useSearch(query, pageNum);
+  const { loading, error, users, hasMore } = useSearch(pageNum);
   console.log(users);
   const observer = React.createRef();
   const paginateEl = useCallback(
