@@ -154,8 +154,8 @@ input[type="submit"] {
 .modal-details {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   align-self: flex-start;
-
 }
 
 .modal-details span label {
